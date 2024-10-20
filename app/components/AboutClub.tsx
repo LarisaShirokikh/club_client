@@ -3,36 +3,47 @@ import React from "react";
 
 const AboutClub: React.FC = () => {
   return (
-    <section className="bg-gray-100 py-16 px-4">
-      <div className="container mx-auto flex flex-col md:flex-row items-center md:justify-between">
-        {/* Текстовая часть */}
-        <div className="md:w-1/2 mb-8 md:mb-0">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">О клубе</h2>
-          <p className="text-lg mb-4">
-            Наш клуб создан для того, чтобы помочь родителям лучше понимать
-            образовательные и воспитательные потребности своих детей. Мы
-            предлагаем полезные ресурсы, советы экспертов и пространство для
-            общения и обмена опытом.
-          </p>
-          <p className="text-lg mb-8">
-            Присоединяйтесь к нам, чтобы вместе строить светлое будущее для
-            наших детей!
-          </p>
-          <a
-            href="/join"
-            className="bg-blue-500 text-white hover:bg-blue-600 font-semibold py-3 px-6 rounded-full transition duration-300"
-          >
-            Узнать больше
-          </a>
-        </div>
+    <section className="bg-gray-100 py-20 px-4 rounded-xl">
+      <div className="container mx-auto">
+        <h2 className="text-3xl text-gray-700 md:text-4xl font-bold mb-8 text-center">
+          О клубе
+        </h2>
+        <div className="flex flex-col md:flex-row gap-8">
+          {/* Карточка 1 */}
+          <div className="bg-white shadow-lg rounded-xl p-6 flex-1">
+            <h3 className="text-2xl text-gray-700 font-semibold mb-4">
+              Наша миссия
+            </h3>
+            <p className="text-gray-600">
+              Мы стремимся помочь родителям лучше понять образовательные и
+              воспитательные потребности их детей, предоставляя полезные ресурсы
+              и советы.
+            </p>
+          </div>
 
-        {/* Изображение или иконка */}
-        <div className="md:w-1/2 flex justify-center">
-          <img
-            src="/img/about-club.jpg" // Путь к изображению в папке public
-            alt="About the Club"
-            className="rounded-lg shadow-lg max-w-full h-auto"
-          />
+          {/* Карточка 2 */}
+          <div className="bg-white shadow-lg rounded-xl p-6 flex-1">
+            <h3 className="text-2xl text-gray-700 font-semibold mb-4">
+              Сообщество и поддержка
+            </h3>
+            <p className="text-gray-600">
+              Клуб предоставляет пространство для общения и обмена опытом, где
+              родители могут находить поддержку и ответы на вопросы, связанные с
+              воспитанием и обучением детей.
+            </p>
+          </div>
+
+          {/* Карточка 3 */}
+          <div className="bg-white shadow-lg rounded-xl p-6 flex-1">
+            <h3 className="text-2xl text-gray-700 font-semibold mb-4">
+              Экспертные советы
+            </h3>
+            <p className="text-gray-600">
+              Мы предлагаем консультации и рекомендации от специалистов в
+              области образования и психологии, чтобы помочь вам принимать
+              обоснованные решения для вашего ребёнка.
+            </p>
+          </div>
         </div>
       </div>
     </section>

@@ -4,7 +4,7 @@ import React from "react";
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-white">
+    <header className="bg-white fixed top-0 left-0 w-full z-20">
       <div className="container mx-auto flex justify-between items-center p-4">
         {/* Логотип */}
         <div className="text-4xl font-bold text-[#e677af] flex justify-between items-center gap-2">
@@ -17,7 +17,7 @@ const Header: React.FC = () => {
           <a href="/" className="text-gray-700 hover:text-[#d14484]">
             О клубе
           </a>
-          <a href="/about" className="text-gray-700 hover:text-[#d14484]">
+          <a href="/" className="text-gray-700 hover:text-[#d14484]">
             Учебники
           </a>
         </nav>

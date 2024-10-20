@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5001/api";
+export const API_URL = "http://localhost:5001";
 
 export const getFiles = async () => {
   try {
@@ -17,3 +17,5 @@ type File = {
   title: string;
   content: string;
 };
+
+
